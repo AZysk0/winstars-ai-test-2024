@@ -1,0 +1,9 @@
+keras==3.0.5
+matplotlib==3.9.1
+numpy==1.15.1
+numpy==1.22.2
+pandas==2.2.2
+seaborn==0.13.2
+tensorflow==2.16.0rc0
+tensorflow_intel==2.16.0rc0
+opencv-python==4.5.5.64
