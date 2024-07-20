@@ -151,7 +151,7 @@ unet_model.load_weights(unet_weights_path)
 test_images_folder_path = 'data/test'
 test_images_filenames =  [os.path.basename(filename) for filename in glob.glob(test_images_folder_path + '/*')]
 
-print(len(test_images_filenames), test_images_filenames[:10])
+print(len(test_images_filenames), test_images_filenames)
 
 some_image = image_from_path(test_images_folder_path, test_images_filenames[1])
 some_image_mask = make_prediction(unet_model, some_image)
