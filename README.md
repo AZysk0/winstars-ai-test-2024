@@ -16,5 +16,5 @@ Too large for kaggle to keep descent amount of images in RAM, so resized it to 1
 - Learning: 20 epochs, Adam(lr=0.0005)
 
 # Results
-0.56 dice-score on validation data
+0.65 dice-score on validation data
 ![Alt text](image.png)
