@@ -12,14 +12,13 @@ import cv2
 
 # tensorflow
 import tensorflow as tf
-from tensorflow.python import keras
-from keras.layers import (Conv2D, Input, MaxPooling2D, 
+from tensorflow import keras
+from tensorflow.keras.layers import (Conv2D, Input, MaxPooling2D, 
                                      Dropout, concatenate, UpSampling2D, BatchNormalization, Conv2DTranspose)
-
-from keras.models import load_model, Model
-from keras.optimizers import Adam
-from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoard
-from keras import backend as K
+from tensorflow.keras.models import load_model, Model
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoard
+from tensorflow.keras import backend as K
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -42,9 +41,7 @@ FULL_SHAPE = (768, 768)
 NEW_SHAPE = (128, 128)
 
 def image_from_path(img_dir, img_name):
-    
     img_path = os.path.join(img_dir, img_name)
-    
     image = cv2.imread(img_path)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.resize(image, NEW_SHAPE)

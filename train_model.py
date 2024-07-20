@@ -239,7 +239,6 @@ history = unet_model.fit(
     callbacks=callbacks
 )
 
-
 # ======= Save results
 import pickle
 
