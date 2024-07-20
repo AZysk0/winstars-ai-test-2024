@@ -18,3 +18,8 @@ Too large for kaggle to keep descent amount of images in RAM, so resized it to 1
 # Results
 0.65 dice-score on validation data
 ![Alt text](image.png)
+
+# My Kaggle notebooks
+1. https://www.kaggle.com/code/artemzysko/ship-detection-tensorflow-u-net-dice-0-65
+2. https://www.kaggle.com/code/artemzysko/ship-detection-model-inference
+3. https://www.kaggle.com/code/artemzysko/airbus-ship-detection-simple-eda
